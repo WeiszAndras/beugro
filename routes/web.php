@@ -1,5 +1,5 @@
 <?php
-
+use App\Production;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/production', 'HomeController@production')->name('production');
+Route::get('/delete/{id}','HomeController@delete')->name('delete');
+Route::get('/center','HomeController@center')->name('center');
+Route::get('/about','HomeController@about')->name('about');
